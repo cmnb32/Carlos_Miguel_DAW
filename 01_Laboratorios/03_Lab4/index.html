@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 4</title>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+    <header>
+        <h1>Laboratorio 4: JavaScript</h1>
+    </header>
+    <div class="menu">
+        <nav>
+            <button onclick="generaTabla()"><strong>Prueba 1</strong></button>
+            <button onclick="sumaAleatoria()"><strong>Prueba 2</strong></button>
+            <button onclick="contador([50, -23, 0, 8, -1, 1])"><strong>Prueba 3</strong></button>
+            <button onclick="promedios([[99, 88, 77, 66, 55], [66, 55, 44, 33, 22], [55, 54, 5, 57, 0], [1, 4, 999, 60, 47], [4, 2, 5, 2, 10]])"><strong>Prueba 4</strong></button>
+            <button onclick="inverso(6852)"><strong>Prueba 5</strong></button>
+            <button onclick="problema6()"><strong>Prueba 6</strong></button>
+            <a>NO SON DE NAVEGACIÓN</a>
+        </nav>
+    </div>
+    
+	<body>
+        <article>
+            <h2>JavaScript: Pruebas</h2>
+            <section>
+                <h3>Prueba 1: Tabla de Números</h3>
+                <p>El primer ejercicio de JavaScript consiste en solicitar al usuario un número, a partir de este se genera una tabla con los números del 1 al que haya ingresado el usuario. Además, incluye los valores eleados al cuadrado y al cubo de estos números.</p>
+                <p>Para hacer uso de esta función, es necesario hacer clic en el botón superior con la leyenda <strong>"Prueba 1"</strong></p>
+                <p class="resultado2">*El resultado se desplegará en una nueva ventana*</p>
+            </section>
+            
+
+            <section>
+                <h3>Prueba 2: Suma Aleatoria</h3>
+                <p>Se generan 2 números aleatorios, posteriormente se le solicita al usuario que apartir de esos valores ingrese en un <strong>prompt</strong> el resultado de la suma. Internamente se realiza la operación para poder mencionarle al usuario si su respuesta es corecta o no junto ocn el tiempo que tardo en realizar la operación.</p>
+                <p>Para hacer uso de esta función, es necesario hacer clic en el botón superior con la leyenda <strong>"Prueba 2"</strong></p>
+                <div class="resultado2" id="resultado2">*El resultado aparecerá aquí*</div>
+            </section>
+            
+            <section>
+                <h3>Prueba 3: Contador</h3>
+                <p>El script recibe como parámetro un arreglo de números, por fines prácticos este ya está predefinido. Esta prueba determina cuantos números del arreglo son positivos, negativos o cero.</p>
+                <p>El arreglo utilizado es el siguiente {50, -23, 0, 8, -1, 1}</p>
+                <p>Para hacer uso de esta función, es necesario hacer clic en el botón superior con la leyenda <strong>"Prueba 3"</strong></p>
+                <div class="resultado2" id="resultado3">*El resultado aparecerá aquí*</div>
+                
+            </section>
+            
+            <section>
+                <h3>Prueba 4: Promedios</h3>
+                <p>El script recibe como parámetro un arreglo de arreglos que contienen números. Como resultado de la función se obtienen los promedios con los números de cada renglón.</p>
+                <p>Para hacer uso de esta función, es necesario hacer clic en el botón superior con la leyenda <strong>"Prueba 4"</strong></p>
+                <div class="resultado2" id="resultado4">*El resultado aparecerá aquí*</div>
+            </section>
+            
+            <section>
+                <h3>Prueba 5: Inverso</h3>
+                <p>Esta función invierte el orden de los dígitos que conforman un número más grande.</p>
+                <p>El número usado es 6852</p>
+                <p>Para hacer uso de esta función, es necesario hacer clic en el botón superior con la leyenda <strong>"Prueba 5"</strong></p>
+                <div class="resultado2" id="resultado5">*El resultado aparecerá aquí*</div>
+            </section>
+            
+            <section>
+                <h3>Prueba 6: Instrucciones</h3>
+                <p>No es un problema complejo, simplemente ayuda a resolver un polinomio con un valor dado de x. para resolver un polinomio de una forma mucho más eficiente se usa el método de Horner.</p>
+                <p>El polinomio usado es: <strong>(x) = x^3 - 6.1x^2 + 3.2x + 1.5 para x = 4.71</strong></p>
+                <p>Para hacer uso de esta función, es necesario hacer clic en el botón superior con la leyenda <strong>"Prueba 6"</strong></p>
+                <div class="resultado2" id="resultado6">*El resultado aparecerá aquí*</div>
+            </section>
+        </article>
+	</body>
+    
+    <footer>
+        <nav>
+            <a>Carlos Miguel Negrete Barrientos</a>
+            <a>A01208733</a>
+        </nav>
+    </footer>
+    
+    <script  src="Lab4.js"></script>
+</html>
