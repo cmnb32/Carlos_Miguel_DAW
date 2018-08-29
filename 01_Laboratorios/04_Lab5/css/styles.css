@@ -1,0 +1,86 @@
+header{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+    padding-left: 0;
+    overflow: hidden;
+    background-color: #055291;
+    opacity: 0.85;
+}
+
+body{
+    background-color: ##eaeff2;
+    margin: 0;
+    
+    
+}
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 150%;
+}
+
+div.menu{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #055291;
+    opacity: 0.98;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+div.menu img{
+    float: left;
+    background-color: #5995c6;
+    height: 70px;
+    
+}
+
+div.menu a{
+    display: inline-block;
+    float:right;
+    background-color: #055291;
+    opacity: 0.85;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 20.34px 30px;
+    border-radius: 2px;
+    transition-duration: 0.6s;
+}
+
+
+div.menu a:hover{
+    background-color: #5995c6;
+    opacity: 8.5;
+    color: black;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+
+
+footer{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 1%;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #055291;
+    position: fixed;
+}
+
+div.datos a{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+}
