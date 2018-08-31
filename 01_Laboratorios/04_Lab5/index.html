@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lab 5: Tienda</title>
+        <title>Lab 5: POE</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -15,21 +15,34 @@
         <div class="menu">
             <img src="images/Logo%20WSD.png" alt="Logo de WSD">
             <nav>
-                <a>Comprar</a>
-                <a>Pagar</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="index.html">Validar Contraseña</a>
             </nav>
         </div>
-            <article>
-                <p>Revisa la presentación Programación orientada a eventos
-        Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para validar passwords. La página debe tener una forma con 2 campos, el campo de password, y el campo de verificar password. Utiliza al máximo tu creatividad e ingeniería para que la página sea un validador de passwords de estado del arte, con la mejor experiencia para el usuario.
-        Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para vender 3 productos de tu interés, con los precios y promociones a tu gusto. La página debe permitir al usuario escoger la cantidad de unidades de cada producto, y debe mostrar el precio total, el IVA que se está cargando, y toda la información que consideres pertinente para que la experiencia del usuario sea la mejor. La página debe validar los rangos de las unidades de cada producto.
-        Con JavaScript y HTML5 y CSS, desarrolla una página con alguna temática o problema de tu interés. La página debe contener una forma y debes realizar las validaciones necesarias. Después de validar la forma, la página debe desplegar información relacionada con los datos introducidos en la forma, es decir la solución del problema o información respectiva a los datos introducidos.</p>
-                <p>Revisa la presentación Programación orientada a eventos
-        Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para validar passwords. La página debe tener una forma con 2 campos, el campo de password, y el campo de verificar password. Utiliza al máximo tu creatividad e ingeniería para que la página sea un validador de passwords de estado del arte, con la mejor experiencia para el usuario.
-        Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para vender 3 productos de tu interés, con los precios y promociones a tu gusto. La página debe permitir al usuario escoger la cantidad de unidades de cada producto, y debe mostrar el precio total, el IVA que se está cargando, y toda la información que consideres pertinente para que la experiencia del usuario sea la mejor. La página debe validar los rangos de las unidades de cada producto.
-        Con JavaScript y HTML5 y CSS, desarrolla una página con alguna temática o problema de tu interés. La página debe contener una forma y debes realizar las validaciones necesarias. Después de validar la forma, la página debe desplegar información relacionada con los datos introducidos en la forma, es decir la solución del problema o información respectiva a los datos introducidos.</p>
-            </article>        
-    
+        <article>
+            <h1>Validador de Contraseña</h1>
+            <p>Con esta herramienta podrás saber si la contraseña que piensas elegir será válida en un futuro. Recuerda que la contraseña debe tener las siguientes características.</p>
+            <ul>
+                <li>Sin espacios en blanco</li>
+                <li>Mínimo 8 carácteres</li>
+            </ul>
+        </article>
+        <div class="valContra">
+            <a>Nueva contraseña <input type="password" id="pswd1" ></a>
+            <a>Repita la contraseña <input type="password" id="pswd2"></a>
+            <a id="contrasenia"><button onclick="contrasenia()"><strong>Verficar</strong></button></a>
+        </div>
+        
+        <article class="ultimo">
+            <h1>Preguntas a Responder</h1>
+            <h4>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h4>
+            <p>En caso de enviar datos incorrectos al servidor puede generar problemas (usar un carácter en lugar de un número). Además, el validar los datos por parte del servidor puede ser costoso, en cuanto a recursos se refiere.  </p>
+            <h4>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h4>
+            <p>Desactivando JS de tu navegador</p>
+            <h4>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h4>
+            <p>Porque es lo mejor para el servidor, pues de esta forma no se pone a trabajar de más. Además, no todos saben que se puede desactivar JS. </p>
+        
+        </article>
     </body>
     
     <footer>
@@ -41,5 +54,5 @@
             </nav>
         </div>
     </footer>
-    
+    <script  src="js/script.js"></script>
 </html>

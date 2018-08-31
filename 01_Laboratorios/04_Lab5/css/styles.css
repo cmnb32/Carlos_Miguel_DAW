@@ -1,25 +1,70 @@
-header{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    margin: 0;
-    padding-left: 0;
-    overflow: hidden;
-    background-color: #055291;
-    opacity: 0.85;
-}
-
 body{
-    background-color: ##eaeff2;
+    background-color: #eaeff2;
     margin: 0;
     
     
 }
-p{
+p, ul, h4{
     margin-left: 10%;
     margin-right: 10%;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
-    font-size: 150%;
+    font-size: 130%;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 230%;
+}
+
+div.valContra{
+    background-color: #055291;
+
+}
+
+div.valContra a{
+    display: flow-root;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    font-size: 130%;    
+    
+}
+
+div.valContra a input{
+    font-size: 85%;
+    padding: 0.6%;
+    border: none;
+    border-radius: 5px;
+    margin-left: 2%;
+}
+
+div.valContra a input:focus{
+    background-color: #eaf5ff;
+    transition-duration: 0.6s;
+}
+
+div.valContra button, .carrito{
+    display: inline-block;
+    background-color: #055291;
+    border: 2px solid rgba(255, 255, 255, 0.37);
+    border-radius: 6px;
+    color: white;
+    font-size: 80%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+
+div.valContra button:hover, .carrito:hover{
+    background-color: rgba(255, 255, 255, 0.37);
+    color: black;
+    transition-duration: 0.6s;
 }
 
 div.menu{
@@ -53,7 +98,7 @@ div.menu a{
     text-align: center;
     padding: 20.34px 30px;
     border-radius: 2px;
-    transition-duration: 0.6s;
+    transition-duration: 0.5s;
 }
 
 
@@ -65,22 +110,64 @@ div.menu a:hover{
     transition-duration: 0.6s;
 }
 
+.articulos{
+    overflow: scroll;
+    border-collapse: collapse;
+    width: 100%;
+    left: 0;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+table.articulos tr th a img{
+    display: inline-grid;
+    height: 400px;
+    padding: 5%;
+    border-radius: 7%;
+}
+
+.campos td{
+    background-color: #ceddf2;
+}
+
+.campos td a{
+    display: flow-root;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 2%;
+}
+
+.number{
+    width: 10%;
+    text-align: center;
+    padding: 0.7%;
+    border-radius: 5px;
+    border: none;
+}
+
+.ultimo{
+    padding-bottom: 5%;
+}
 
 footer{
+    position: fixed;
     text-align: center;
     color: white;
     margin: 0;
     padding: 1%;
     bottom: 0;
+    right: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #055291;
-    position: fixed;
+    background-color: #055291; 
 }
 
 div.datos a{
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-family: 'Roboto', sans-serif;
-    font-size: 120%;
+    font-size: 100%;
+    transition-duration: 0.6s;
 }
+

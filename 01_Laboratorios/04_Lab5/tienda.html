@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 5: Tienda</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+        
+    <header>
+                
+    </header> 
+    
+    <body>
+        <div class="menu">
+            <img src="images/Logo%20WSD.png" alt="Logo de WSD">
+            <nav>
+                <a href="tienda.html">Tienda</a>
+                <a href="index.html">Validar Contraseña</a>
+            </nav>
+        </div>
+        <article>
+            <h1>Tienda en Línea</h1>
+            <p></p>
+        </article>
+        <section>
+            <table class="articulos">
+                <tr>
+                    <th><a><img src="images/ccs.jpg" alt="Portada de Card Captor Sakura 1"></a></th>
+                    <th><a><img src="images/xxxholic.jpg" alt="Portada de xxxHolic 1"></a></th>
+                    <th><a><img src="images/tsubasa.jpg" alt="Portada de Tsubasa Reservoir Chronicle 1"></a></th>
+                </tr>
+                <tr class="campos">
+                    <td>
+                        <h3>CardCaptor Sakura</h3>
+                        <a>Adquiere el primer tomo de CardCaptor Sakura. Una historia que logró cautivar hasta los más machos. </a>
+                        <a>Precio: $270c/u IVA inc.</a>
+                        <a>Cantidad: <input type="number" class="number" min="0" max="5" id="ccs"  ></a>
+                        <a><button class="carrito" id="ccsagregar"><strong>Añadir al Carrito</strong></button></a>
+                    </td>
+                    <td>
+                        <h3>xxxHolic</h3>
+                        <a>Adquiere el primer tomo de xxxHolic. Sigue las aventuras sobrenaturales de Watanuki dentro de la tienda de deseos de la Señorita Yuko. </a>
+                        <a>Precio: $150c/u IVA inc.</a>
+                        <a>Cantidad: <input type="number" class="number" min="0" max="5" id="holic" ></a>
+                        <a><button class="carrito" id="holicagregar"><strong>Añadir al Carrito</strong></button></a>
+                    </td>
+                    <td>
+                        <h3>Tsubasa Reservoir Chronicle</h3>
+                        <a>Adquiere el primer tomo de Tsubasa Reservoir Chronicle. La joven Sakura debe recuperar plumas de sus alas para recuperar su memoria.</a>
+                        <a>Precio: $110c/u IVA inc.</a>
+                        <a>Cantidad: <input type="number" class="number" min="0" max="5" id="trc" ></a>
+                        <a><button class="carrito" id="trcagregar"><strong>Añadir al Carrito</strong></button></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+
+    
+    </body>
+    
+    <footer>
+        <div class="datos">
+            <nav>
+                <a id="sub">Subtotal: $0.00 MXN </a>
+                <a id="iva">IVA (16%): $0.00 MXN</a>
+                <a id="tot"><strong>Total: $0.00 MXN</strong></a>
+            </nav>
+        </div>
+    </footer>
+    <script  src="js/tienda.js"></script>
+</html>
