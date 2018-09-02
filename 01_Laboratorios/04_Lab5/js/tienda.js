@@ -26,4 +26,6 @@ function agregarCarrito(){
     iva.innerHTML = "IVA (16%): $"  + ((cantCCS * ((270 * 0.16) )) + (cantHOLIC * ((150 * 0.16) )) + (cantTRC * ((110 * 0.16) ) )).toFixed(2) + " MXN";
     
     tot.innerHTML = "<strong>Total: $"  + ((cantCCS * 270) + (cantHOLIC * 150) + (cantTRC * 110) ).toFixed(2) + " MXN</strong>";
+    
+    setTimeout(function(){ alert("De momento no se pueden realizar compras. Gracias por probar la página :D"); }, 2000);
 }

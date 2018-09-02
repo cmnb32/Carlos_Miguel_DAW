@@ -13,14 +13,14 @@
     
     <body>
         <div class="menu">
-            <img src="images/Logo%20WSD.png" alt="Logo de WSD">
+            <img src="images/Logo%20WSD.png" alt="Logo de WSD" draggable="true" id="dragimg" ondragstart="drag(event)">
             <nav>
                 <a href="tienda.html">Tienda</a>
                 <a href="index.html">Validar Contraseña</a>
             </nav>
         </div>
         <article>
-            <h1>Validador de Contraseña</h1>
+            <h1 id="dclick">Validador de Contraseña</h1>
             <p>Con esta herramienta podrás saber si la contraseña que piensas elegir será válida en un futuro. Recuerda que la contraseña debe tener las siguientes características.</p>
             <ul>
                 <li>Sin espacios en blanco</li>
@@ -32,7 +32,11 @@
             <a>Repita la contraseña <input type="password" id="pswd2"></a>
             <a id="contrasenia"><button onclick="contrasenia()"><strong>Verficar</strong></button></a>
         </div>
+        <section>
+            <h1>Arrastra el Logo</h1>
         
+            <div id="drag" class="drag" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </section>
         <article class="ultimo">
             <h1>Preguntas a Responder</h1>
             <h4>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h4>
@@ -41,6 +45,18 @@
             <p>Desactivando JS de tu navegador</p>
             <h4>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h4>
             <p>Porque es lo mejor para el servidor, pues de esta forma no se pone a trabajar de más. Además, no todos saben que se puede desactivar JS. </p>
+            <h4>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</h4>
+            <ul>
+                <li>static: aparece conforme al orden de aparición en el html.</li>
+                <li>fixed: aparece de forma relativa a la ventana del navegador.</li>
+                <li>absolute: aparece de forma relativa a la primera posición del elemento padre</li>
+                <li>relative: aparece de forma relativa a su posisión normal.</li>
+                <li>sticky: una fusión entre relative y fixed. El movimeinto de la rueda del ratón influye en la posición.</li>
+            </ul>
+            <h4>¿Cuáles son los valores estándar para la propiedad visibility?</h4>
+            <p>visible y hidden </p>
+            <h4>¿Qué es el zIndex y para qué sirve?</h4>
+            <p>Es una propiedad que se le puede asignar a los elementos HTML, permitiendoles tener profundidad. De esta forma es posible tener elementos frete a otros. Sólo funciona cuando está la propiedad position activada.  </p>
         
         </article>
     </body>

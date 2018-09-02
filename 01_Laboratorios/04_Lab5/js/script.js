@@ -1,3 +1,5 @@
+document.getElementById("dclick").addEventListener("mouseover", function(){changeTxt(1);});
+document.getElementById("dclick").addEventListener("mouseleave", function(){changeTxt(0);});
 function contrasenia(){
     let tex = document.getElementById("contrasenia");
     let pass1 = String(document.getElementById("pswd1").value);
@@ -38,4 +40,30 @@ function validarPass(pass1, pass2){
     }else{
         tex.innerHTML = "<button onclick='contrasenia()'><strong>Verficar</strong></button> La contrseña no coincide";
     }
+}
+
+function changeTxt(num){
+    let tex = document.getElementById("dclick");
+    if(num == 1){
+        tex.innerHTML = "Descrubriste una Nueva función :D";
+        tex.style.color = "#055291";
+    }else if(num == 0){
+        tex.innerHTML = "Validador de Contraseña";
+        tex.style.color = "black";
+    }
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+    
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
 }
