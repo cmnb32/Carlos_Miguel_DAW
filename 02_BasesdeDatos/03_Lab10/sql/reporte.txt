@@ -1,0 +1,13 @@
+¿Que muestra la instrucción sp_help materiales? 
+    Muestra los datos de la tabla creada. 
+
+¿Qué efecto tuvo esta acción? (crear script) y ¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+    Poder ejecutar con un solo archivo todos los comandos sin necesidad de ir uno por uno. Tambien tiene la ventaja de poder mantener guardados y reutilizables los comandos.
+    
+¿Qué relación tienen con las tablas de la base de datos? (checa su contenido)
+    Son los mismos datos, pero cargados a las tablas alojadas en la base de datos. 
+
+
+
+
+
